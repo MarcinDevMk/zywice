@@ -1,0 +1,95 @@
+/* Ogólne ustawienia */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Główne okno */
+.container {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Nagłówki */
+h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+/* Link */
+.link-container a {
+    color: #e43f3f;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.link-container a:hover {
+    text-decoration: underline;
+}
+
+/* Autor */
+.author {
+    font-size: 0.8rem;
+    color: rgba(0, 0, 0, 0.6);
+    margin-top: 5px;
+}
+
+/* Formularz */
+form {
+    margin-top: 15px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+select,
+input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    font-size: 1rem;
+    border: 1px solid #4CAF50;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+select:hover,
+input[type="number"]:hover {
+    border-color: #45a049;
+}
+
+/* Przyciski */
+button {
+    padding: 10px 20px;
+    background-color: #29a745;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #218838;
+}
