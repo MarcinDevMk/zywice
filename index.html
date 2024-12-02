@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularz Aplikacji</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id="calculatorContainer">
+        <h1>Kalkulator Żywic</h1>
+        <p class="subtitle">Cons Control System</p>
+        <div class="link-container">
+            <a href="https://cons.pl/" target="_blank">Nasza strona</a>
+        </div>
+        <p class="author">by Nicram</p>
+        <form id="applicationForm">
+            <div class="form-group">
+                <label for="sleeveType">Rodzaj rękawa</label>
+                <select id="sleeveType" name="sleeveType" required>
+                    <option value="">Wybierz rodzaj rękawa</option>
+                    <option value="Insituform">Insituform</option>
+                    <option value="ConsAir">ConsAir</option>
+                    <option value="Elastic">Elastic</option>
+                    <option value="2HomeLiner">2HomeLiner</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="diameter">Średnica rurociągu (mm)</label>
+                <select id="diameter" name="diameter" required>
+                    <option value="">Wybierz średnicę</option>
+                    <option value="150">150</option>
+                    <option value="200">200</option>
+                    <option value="300">300</option>
+                    <option value="350">350</option>
+                    <option value="400">400</option>
+                    <option value="450">450</option>
+                    <option value="500">500</option>
+                    <option value="600">600</option>
+                    <option value="700">700</option>
+                    <option value="800">800</option>
+                </select>
+            </div>
+            <div class="form-group" id="collectorDiameterGroup" style="display: none;">
+                <label for="collectorDiameter">Średnica kolektora (mm)</label>
+                <select id="collectorDiameter" name="collectorDiameter">
+                    <option value="">Wybierz średnicę kolektora</option>
+                    <option value="150">150</option>
+                    <option value="200">200</option>
+                    <option value="300">300</option>
+                    <option value="450">450</option>
+                    <option value="500">500</option>
+                    <option value="600">600</option>
+                    <option value="700">700</option>
+                    <option value="800">800</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="sleeveThickness">Grubość rękawa (mm)</label>
+                <select id="sleeveThickness" name="sleeveThickness" required>
+                    <option value="">Wybierz grubość</option>
+                    <option value="4">4</option>
+                    <option value="4.5">4,5</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7.5">7,5</option>
+                    <option value="9">9</option>
+                    <option value="10.5">10,5</option>
+                    <option value="12">12</option>
+                    <option value="13.5">13,5</option>
+                    <option value="15">15</option>
+                    <option value="16.5">16,5</option>
+                    <option value="18">18</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="sleeveLength">Długość rękawa (m)</label>
+                <input type="number" id="sleeveLength" name="sleeveLength" min="0" step="0.01" required placeholder="Wpisz długość w metrach">
+            </div>
+            <div class="form-group">
+                <label for="resinType">Rodzaj żywicy</label>
+                <select id="resinType" name="resinType" required>
+                    <option value="">Wybierz rodzaj żywicy</option>
+                    <option value="CS70">CS70</option>
+                    <option value="CS400">CS400</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="calculator">Przelicznik</label>
+                <input type="number" id="calculator" name="calculator" value="0.8" step="0.1" min="0" required>
+            </div>
+            <button type="submit" class="submit-button">Oblicz</button>
+        </form>
+    </div>
+    <div class="container" id="resultContainer" style="display: none;">
+        <h1>Wynik Kalkulacji</h1>
+        <p id="resultSleeveType"></p>
+        <p id="resultResinType"></p>
+        <p id="resultPerMeter"></p>
+        <p id="resultTotal"></p>
+        <p id="resultRatio"></p>
+        <button class="submit-button" id="backButton">Wróć</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
