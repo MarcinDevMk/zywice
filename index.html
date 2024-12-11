@@ -20,8 +20,7 @@
                 <select id="sleeveType" name="sleeveType" required>
                     <option value="">Wybierz rodzaj rękawa</option>
                     <option value="Insituform">Insituform</option>
-                    <option value="ConsAir">ConsAir</option>
-                    <option value="Elastic">Elastic</option>
+                    <option value="ConsAir">ConsAir</option>    
                     <option value="2HomeLiner">2HomeLiner</option>
                 </select>
             </div>
@@ -87,7 +86,7 @@
             </div>
             <div class="form-group">
                 <label for="calculator">Przelicznik</label>
-                <input type="number" id="calculator" name="calculator" value="0.8" step="0.1" min="0" required>
+                <input type="number" id="calculator" name="calculator" value="0.7" step="0.05" min="0"required>
             </div>
             <button type="submit" class="submit-button">Oblicz</button>
         </form>
@@ -96,9 +95,19 @@
         <h1>Wynik Kalkulacji</h1>
         <p id="resultSleeveType"></p>
         <p id="resultResinType"></p>
+        <p id="resultSleeveLength"></p> <!-- Długość rękawa -->
         <p id="resultPerMeter"></p>
         <p id="resultTotal"></p>
-        <p id="resultRatio"></p>
+        
+        
+        <!-- Komponenty A i B jeden pod drugim -->
+        <div id="resultRatio">
+            <p id="ratioA"></p>
+            <p id="ratioB"></p>
+        </div>
+    
+        <!-- Przerwa -->
+        <div style="height: 20px;"></div>
         <button class="submit-button" id="backButton">Wróć</button>
     </div>
     <script src="script.js"></script>
